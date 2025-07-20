@@ -1,0 +1,55 @@
+# 📚 SQL Developer Internship – Task 5: SQL Joins (Using Books Table)
+
+## 📌 Objective
+
+The goal of this task is to understand and apply different types of SQL JOINs (INNER, LEFT, RIGHT, FULL) using a realistic `books` table setup. This simulates how data from related tables like `authors`, `publishers`, and `books` can be combined to generate meaningful reports.
+
+---
+
+## 🛠 Tools Used
+
+- Pgsql
+
+---
+
+## 🗃️ Database Tables
+
+### `authors`
+
+| Column Name  | Type    | Description        |
+|--------------|---------|--------------------|
+| author_id    | INT     | Primary Key        |
+| author_name  | TEXT    | Name of Author     |
+
+---
+
+### `publishers`
+
+| Column Name    | Type    | Description        |
+|----------------|---------|--------------------|
+| publisher_id   | INT     | Primary Key        |
+| publisher_name | TEXT    | Name of Publisher  |
+
+---
+
+### `books`
+
+| Column Name     | Type       | Description              |
+|------------------|------------|---------------------------|
+| book_id          | INT        | Primary Key               |
+| title            | TEXT       | Book Title                |
+| author_id        | INT        | Foreign Key → authors     |
+| publisher_id     | INT        | Foreign Key → publishers  |
+| price            | DECIMAL    | Book Price (INR)          |
+| published_year   | INT        | Year of Publication       |
+
+---
+
+## 🔄 SQL Join Queries
+
+### 1️⃣ INNER JOIN – Books with Authors
+
+```sql
+SELECT b.title, a.author_name
+FROM books b
+INNER JOIN authors a ON b.author_id = a.author_id;
