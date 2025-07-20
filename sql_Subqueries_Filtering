@@ -1,0 +1,27 @@
+# Task 6: Subqueries and Nested Queries – SQL Developer Internship
+
+## 🔍 Objective
+To practice advanced SQL query techniques using subqueries in SELECT, WHERE, and FROM clauses.
+
+## 📌 Topics Covered
+- Scalar Subqueries
+- Correlated Subqueries
+- Subqueries with IN, EXISTS
+- Subqueries in SELECT and FROM
+- Derived Tables
+
+## 🛠️ Tools Used
+- Pgsql
+
+## 📁 Files
+- `queries.sql`: Contains all the SQL queries used for this task
+- `output_screenshots/`: Screenshots of query outputs (optional)
+
+## 📚 Sample Queries
+
+```sql
+-- Book titles and their authors
+SELECT 
+  title,
+  (SELECT author_name FROM authors WHERE authors.author_id = books.author_id) AS author_name
+FROM books;
