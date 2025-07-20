@@ -1,0 +1,37 @@
+
+---
+
+## 📌 Tables Used
+
+- `authors(author_id, author_name)
+
+
+---
+
+## 💻 SQL Operations Covered
+
+
+select * from authors;
+
+--specific columns
+select author_name
+from authors;
+
+2.Apply WHERE, AND, OR, LIKE, BETWEEN
+
+---where
+select author_name 
+from authors 
+where author_id=1;
+
+---or
+select author_name
+from authors where author_id=1 or author_id=2;
+
+---and like
+
+select author_name
+from authors
+where author_name LIKE 'S%' AND author_name LIKE '%a%';
+
+
