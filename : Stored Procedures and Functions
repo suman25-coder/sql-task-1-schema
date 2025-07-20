@@ -1,0 +1,23 @@
+# 🔁 SQL Developer Internship – Task 8: Stored Procedures and Functions
+
+## 📌 Objective
+
+Learn to write reusable SQL blocks using stored procedures and functions to modularize logic and simplify repeated operations.
+
+---
+
+## 🛠 Tools Used
+
+-Pgsql
+-Sql
+
+---
+
+## ✅ Stored Procedure
+
+### 🔹 `get_books_by_author`
+
+Returns all books written by a given author.
+
+```sql
+CALL get_books_by_author('Chetan Bhagat');
