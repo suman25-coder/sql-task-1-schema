@@ -1,0 +1,36 @@
+# SQL Developer Internship – Task 2: Data Insertion and Handling NULLs
+
+## 📌 Task Overview
+
+This task focuses on performing Data Manipulation Language (DML) operations on a database. It involves inserting records into tables, updating existing data, handling NULL values, and ensuring data consistency.
+
+---
+
+## 🗃️ Database Used
+
+- PostgreSQL 
+- Tables: `authors`, `books`, `publishers`, etc. (as per your schema)
+
+---
+
+## ✅ Objectives
+
+ Apply `WHERE`, `AND`, `OR`, `LIKE`, and `BETWEEN` conditions effectively.
+
+---
+
+## 📄 Key SQL Queries
+
+### Insert Records
+
+```sql
+INSERT INTO authors (author_id, author_name)
+VALUES (1	"suman")
+(2	"suraj")
+(3	"vinit")
+(5	"sachin")
+(6	"saurav")
+(7	"gaurav")
+(8	"rakesh")
+(9	"raushan")
+(10	"nitin")
